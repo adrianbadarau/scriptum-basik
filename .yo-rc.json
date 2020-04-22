@@ -1,0 +1,52 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.for_the_love_of_code.scriptum_basik",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "monolith",
+    "baseName": "scriptum_basik",
+    "packageName": "com.for_the_love_of_code.scriptum_basik",
+    "packageFolder": "com/for_the_love_of_code/scriptum_basik",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDFiYWI1ZjFmMGUwMWQzYmJlZWE5MzQyOTI2N2YyNGRmMDdiNjNkZGMxNGQ3ZmNhMjBmOTAzNmExYjA5YTVkNGYyYmRlMGU5MDUwNTc2NDI2MjA4ZWFjNDlkNTQ1MzQ3NDFmNTllNTM2MzljZTY4NTk3OWU3YTE1YmIzZGExY2U=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1587578688911,
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.6.0"
+      }
+    ],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "nl", "fr", "ro", "es"],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-kotlin",
+        "version": "1.6.0"
+      }
+    ]
+  }
+}
