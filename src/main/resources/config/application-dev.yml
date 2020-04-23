@@ -118,4 +118,8 @@ jhipster:
 # https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
-# application:
+application:
+  google:
+    callbackUri: http://develop.com:8080/google/drive/oauth/callback
+    secretKey: classpath:keys/client_id.json
+    credentialsFolder: classpath:keys/
