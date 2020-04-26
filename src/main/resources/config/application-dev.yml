@@ -24,6 +24,7 @@ spring:
     active: dev
     include:
       - swagger
+      - liquibase
       # Uncomment to activate TLS for the dev profile
       #- tls
   devtools:
@@ -45,7 +46,7 @@ spring:
       auto-commit: false
   h2:
     console:
-      enabled: false
+      enabled: true
   jpa:
     show-sql: true
     properties:
@@ -122,4 +123,4 @@ application:
   google:
     callbackUri: http://develop.com:8080/google/drive/oauth/callback
     secretKey: classpath:keys/client_id.json
-    credentialsFolder: classpath:keys/
+    credentialsFolder: file:/temp
