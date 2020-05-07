@@ -151,3 +151,5 @@ Desktop.ini
 ######################
 /src/main/resources/credentials.json
 /src/main/resources/keys/*
+credentials
+temp
