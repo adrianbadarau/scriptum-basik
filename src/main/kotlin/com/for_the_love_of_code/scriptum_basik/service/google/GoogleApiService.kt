@@ -8,6 +8,8 @@ import com.google.api.client.http.javanet.NetHttpTransport
 import com.google.api.client.json.jackson2.JacksonFactory
 import com.google.api.client.util.store.FileDataStoreFactory
 import com.google.api.services.drive.DriveScopes
+import org.springframework.boot.system.ApplicationHome
+import java.io.File
 import java.io.InputStreamReader
 import javax.annotation.PostConstruct
 
@@ -27,7 +29,7 @@ abstract class GoogleApiService(
     @PostConstruct
     fun postConstruct() {
         val secrets = GoogleClientSecrets.load(JSON_FACTORY, InputStreamReader(applicationProperties.google.secretKey.inputStream))
-        dataStoreFactory = FileDataStoreFactory(applicationProperties.google.credentialsFolder.file)
+        dataStoreFactory = FileDataStoreFactory(File("${ApplicationHome().dir.absolutePath}/credentials"))
         flow = GoogleAuthorizationCodeFlow.Builder(HTTP_TRANSPORT, JSON_FACTORY, secrets, SCOPES)
             .setDataStoreFactory(dataStoreFactory).build()
     }

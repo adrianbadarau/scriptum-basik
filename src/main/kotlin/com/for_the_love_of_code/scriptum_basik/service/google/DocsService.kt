@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service
 class DocsService(applicationProperties: ApplicationProperties) : GoogleApiService(applicationProperties) {
 
     private val docs: Docs by lazy {
-        Docs.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials()).setApplicationName("Scriptum-Document-Manager").build()
+        Docs.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials()).setApplicationName("Scriptum-Basik").build()
     }
 
     private fun readParagraphElement(element: ParagraphElement): String {
