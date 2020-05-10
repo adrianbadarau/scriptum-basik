@@ -1,0 +1,26 @@
+{
+  "scriptumBasikApp": {
+    "documentItem": {
+      "home": {
+        "title": "Document Items",
+        "createLabel": "Maak een nieuwe Document Item",
+        "createOrEditLabel": "Maak of wijzig een Document Item",
+        "notFound": "No Document Items found"
+      },
+      "created": "A new Document Item is created with identifier {{ param }}",
+      "updated": "A Document Item is updated with identifier {{ param }}",
+      "deleted": "A Document Item is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Document Item {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Document Item"
+      },
+      "name": "Name",
+      "googleDocsId": "Google Docs Id",
+      "documentText": "Document Text",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}

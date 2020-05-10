@@ -1,0 +1,26 @@
+{
+  "scriptumBasikApp": {
+    "documentItem": {
+      "home": {
+        "title": "Document Items",
+        "createLabel": "Crear nuevo Document Item",
+        "createOrEditLabel": "Crear o editar Document Item",
+        "notFound": "Ningún Document Items encontrado"
+      },
+      "created": "Un nuevo Document Item ha sido creado con el identificador {{ param }}",
+      "updated": "Un Document Item ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Document Item ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Document Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Document Item"
+      },
+      "name": "Name",
+      "googleDocsId": "Google Docs Id",
+      "documentText": "Document Text",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}

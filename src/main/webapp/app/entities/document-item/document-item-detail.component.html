@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="documentItem">
+            <h2><span jhiTranslate="scriptumBasikApp.documentItem.detail.title">Document Item</span> {{ documentItem.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="scriptumBasikApp.documentItem.name">Name</span></dt>
+                <dd>
+                    <span>{{ documentItem.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="scriptumBasikApp.documentItem.googleDocsId">Google Docs Id</span></dt>
+                <dd>
+                    <span>{{ documentItem.googleDocsId }}</span>
+                </dd>
+                <dt><span jhiTranslate="scriptumBasikApp.documentItem.documentText">Document Text</span></dt>
+                <dd>
+                    <span>{{ documentItem.documentText }}</span>
+                </dd>
+                <dt><span jhiTranslate="scriptumBasikApp.documentItem.createdAt">Created At</span></dt>
+                <dd>
+                    <span>{{ documentItem.createdAt }}</span>
+                </dd>
+                <dt><span jhiTranslate="scriptumBasikApp.documentItem.updatedAt">Updated At</span></dt>
+                <dd>
+                    <span>{{ documentItem.updatedAt }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/document-item', documentItem.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

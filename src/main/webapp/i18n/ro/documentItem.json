@@ -1,0 +1,26 @@
+{
+  "scriptumBasikApp": {
+    "documentItem": {
+      "home": {
+        "title": "Document Items",
+        "createLabel": "Creeare o nouă entitate Document Item",
+        "createOrEditLabel": "Creeare sau editare Document Item",
+        "notFound": "No Document Items found"
+      },
+      "created": "A fost creată o nouă entitate Document Item cu identificatorul {{ param }}",
+      "updated": "Document Item cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Document Item cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Document Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Document Item"
+      },
+      "name": "Name",
+      "googleDocsId": "Google Docs Id",
+      "documentText": "Document Text",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}
